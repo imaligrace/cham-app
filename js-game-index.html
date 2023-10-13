@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHAM CHAM CHAM</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="js-game-style.css" />
+    <!-- FONT 1 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- JAVASCRIPT -->
+    <script src="js-game-script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- AUDIO: Need to play/stop button in UI -->
+    <audio id="background-music" src="squid.mp3" loop autoplay></audio>
+
+    <!-- MAIN GAME PAGE -->
+    <section id="section1" class="game-section">
+      <div class="game-board">
+        <div class="game-box row1">
+          <img class="game-logo" src="images\logo-o.png" alt="CHAM CHAM" />
+        </div>
+        <div class="game-box row1">
+          <button class="player-move">
+            <img src="images\up-finger.png" class="up-move" alt="UP MOVE" />
+          </button>
+        </div>
+        <div class="game-box row1">
+          <button class="player-move">
+            <img
+              src="images\right-finger.png"
+              class="right-move"
+              alt="RIGHT MOVE"
+            />
+          </button>
+        </div>
+        <div id="computer-move" class="computer-move game-box row2">CHAM</div>
+        <div class="game-box row2">
+          <button class="player-move">
+            <img
+              src="images\left-finger.png"
+              class="left-move"
+              alt="LEFT MOVE"
+            />
+          </button>
+        </div>
+        <div class="game-box row2">
+          <button class="player-move">
+            <img
+              src="images\down-finger.png"
+              class="down-move"
+              alt="DOWN MOVE"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="game-buttons">
+        <div class="button-row">
+          <button id="start-button" class="game-button start-button">
+            <img
+              src="images\play.png"
+              class="start-button-icon"
+              alt="PLAY GAME"
+            />
+          </button>
+          <button id="end-button" class="game-button end-button">
+            <img src="images\end.png" class="end-button-icon" alt="END GAME" />
+          </button>
+          <button id="play-again-button" class="game-button again-button">
+            <img
+              src="images\again.png"
+              class="again-button-icon"
+              alt="PLAY AGAIN"
+            />
+          </button>
+        </div>
+      </div>
+
+      <div class="game-results">
+        <div class="game-results-container">
+          <img src="images/girl.png" class="results-girl" alt="Girl Icon" />
+          <p>Read Game Rules Below</p>
+          <a href="#last" class="down-arrow">
+            <img
+              src="images/arrow-down.png"
+              class="results-arrow-down"
+              alt="Go Down"
+            />
+          </a>
+          <img src="images/score.png" class="score-image" alt="SCORE" />
+          <div id="score-box" class="score-box"></div>
+          <img src="images/time.png" class="time-image" alt="TIME" />
+          <div id="time-box" class="score-box"></div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF GAME PAGE -->
+
+    <!-- GAME RULES PAGE -->
+    <section id="section2" class="game-rules">
+      <img src="images\about-y.png" class="rules-image" alt="About the Game" />
+      <div class="game-rules-content">
+        <div class="rules-container">
+          <p>
+            Get ready to put your lightning-fast fingers to the test with Cham
+            Cham Cham! <br /><br />
+            Inspired by the Korean variety game, your goal is to click the
+            finger that's pointing the opposite way before time runs out. Be
+            quick and watch out for the computer's moves! <br /><br />
+            How long can you keep up the winning streak? <br />
+            Challenge yourself and have fun with Cham Cham Cham!
+          </p>
+        </div>
+
+        <div class="rules-row">
+          <p id="last">Scroll Up to Play the Game</p>
+          <a href="#section1" class="up-arrow"
+            ><img src="images\arrow-up.png" class="rules-arrow-up" alt="Go Up"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- END OF PAGE -->
+  </body>
+</html>
